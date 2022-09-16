@@ -1,0 +1,6 @@
+@mixin fg($flow: row, $justify: center, $align: center) {
+    display: flex;
+    flex-flow: wrap $flow;
+    justify-content: $justify;
+    align-items: $align;
+}

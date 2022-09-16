@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  font-family: "Muli", "Yekan Bakh";
+}
+
+.main {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.795);
+  height: 100vh;
+}
+
+.right img {
+  width: 45vw;
+  height: 100vh;
+}
+
+.main-dark {
+  background-color: #080808;
+}
+
+.main-dark .right {
+  color: #ccc;
+}
+
+.container {
+  width: 55vw;
+  height: 100vh;
+  color: black;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.container img {
+  width: 60px;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container a {
+  text-decoration: none;
+  color: #2e2cd4;
+}
+
+.container .btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  background-color: lightblue;
+  margin-top: 10px;
+  padding: 15px;
+  font-size: 16px;
+  border: 0;
+  border-radius: 7px;
+}
+
+.container .btn:focus {
+  outline: 0;
+}
+
+.container .btn:active {
+  transform: scale(0.98);
+}
+
+.container .text {
+  margin-top: 30px;
+}
+
+.container .captcha {
+  position: relative;
+  margin: 20px 0 10px;
+  width: 100px;
+}
+
+.container .captcha input {
+  background-color: #fff;
+  border: 0;
+  border: 1px rgba(145, 142, 142, 0.26) solid;
+  display: block;
+  width: 100%;
+  padding: 8px 40px;
+  font-size: 14px;
+  color: black;
+  border-radius: 7px;
+  outline: none;
+}
+
+.container .check {
+  display: flex;
+}
+
+.container .check label {
+  margin-right: 7px;
+}
+
+.container .form-control {
+  position: relative;
+  margin: 0 0 20px;
+  width: 300px;
+}
+
+.container .form-control a {
+  font-size: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 39px;
+  color: blue;
+  border-bottom: 1px dotted blue;
+}
+
+.container .form-control input {
+  background-color: #fff;
+  border: 0;
+  border: 1px rgba(145, 142, 142, 0.26) solid;
+  display: block;
+  width: 100%;
+  padding: 8px 40px;
+  font-size: 14px;
+  color: black;
+  border-radius: 7px;
+  outline: none;
+}
+
+.container .form-control .input-style {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.container .form-control .input-style i {
+  position: absolute;
+  right: 0;
+  margin: 15px;
+  font-size: 22px;
+  pointer-events: none;
+}
+
+.dashboard {
+  background-image: url("https://th.bing.com/th/id/OIP.Y-MC3HVaWj_Zudjg_DAXLAHaE3?pid=ImgDet&rs=1");
+  width: 100vw;
+  height: 100vh;
+}
+
+#style-table {
+  width: 98%;
+  font-size: 15px;
+}
+
+#style-table td,
+#style-table th {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+#style-table tr {
+  text-align: center;
+}
+
+#style-table tr:hover {
+  background-color: #ddd;
+  scale: 1.02;
+}
+
+#style-table th {
+  padding-top: 12px;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+#loading {
+  position: absolute;
+  z-index: 1000;
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  line-height: 100vh;
+}
+
+#loading .img {
+  position: relative;
+  margin: auto;
+  margin-top: 20%;
+}
+
+.users-main {
+  direction: rtl;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.users-main .show-users {
+  width: 45%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.users-main .show-users img {
+  border-radius: 50%;
+}
+
+.users-main .show-users .details {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.users-main .show-users .details span {
+  margin: 0.5rem;
+}
+
+.single-user-style {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-user-style .single-user-card {
+  width: 35%;
+  height: 80%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.single-user-style .single-user-card img {
+  padding: 1rem;
+}
+
+.single-user-style .single-user-card span {
+  padding: 0.5rem;
+  margin: 1rem;
+}
+/*# sourceMappingURL=style.css.map */
